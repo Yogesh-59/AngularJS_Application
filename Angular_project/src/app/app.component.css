@@ -1,6 +1,7 @@
 div {
     text-align: center;
     margin-top: 50px;
+    font-family: Arial, sans-serif;
   }
   
   img {
@@ -15,15 +16,34 @@ div {
     transform: scale(1.1);
   }
   input {
-    padding :8px;
-    font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
   }
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #28a745;
+  }
+
   p{
     font-size: 20px;
-    color:#007bff;
+    color:red;
     font-weight: bold;
     margin-top: 20px;
   }
+  .error-output {
+    margin-left: 10px;  /* Fixed margin syntax */
+    font-size: 12px;    /* Fixed font-size syntax */
+    font-style: italic; /* Added missing semicolon */
+    color: red;         /* Added missing semicolon */
+}

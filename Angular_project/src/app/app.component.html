@@ -2,9 +2,10 @@
   <h1>{{ title }}, {{ userName }}</h1>
 
   <label for="name">Enter Your Name:</label>
-  <input type="text" id="name" [(ngModel)]="userName" placeholder="Enter Your Name" />
-
-  <p *ngIf="userName">Welcome, {{ userName }}!</p>
+  <input type="text" [(ngModel)]="userName" (input)="onInput($event)" placeholder="Enter your name" />
+  <span class =error-output>{{this.nameError}}</span>
+  <p *ngIf="nameError" style="color: red;">{{ nameError }}</p>
+  <h2 *ngIf="!nameError">Hello, {{ userName }}!</h2>
 
   <img 
     [src]="imgUrl" 
