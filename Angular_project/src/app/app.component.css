@@ -14,4 +14,16 @@ div {
   img:hover {
     transform: scale(1.1);
   }
-  
+  input {
+    padding :8px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  p{
+    font-size: 20px;
+    color:#007bff;
+    font-weight: bold;
+    margin-top: 20px;
+  }

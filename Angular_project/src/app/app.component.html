@@ -1,7 +1,15 @@
 <div>
-  <h1>{{ this.title }}</h1>
-  <img [src]="imgUrl" alt="BridgeLabz Logo: A Bridge to Employment throught a Lab works" 
-  (click)="openBridgeLabz()"
-  style ="cursor:pointer;"
+  <h1>{{ title }}, {{ userName }}</h1>
+
+  <label for="name">Enter Your Name:</label>
+  <input type="text" id="name" [(ngModel)]="userName" placeholder="Enter Your Name" />
+
+  <p *ngIf="userName">Welcome, {{ userName }}!</p>
+
+  <img 
+    [src]="imgUrl" 
+    alt="BridgeLabz Logo: A Bridge to Employment through a Lab works" 
+    (click)="openBridgeLabz()" 
+    style="cursor: pointer; width: 200px; height: auto; margin-top: 10px;"
   />
 </div>
